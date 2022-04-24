@@ -21,7 +21,6 @@ COPY --from=builder /app/dist ./pkg
 COPY --from=deps /app/node_modules ./node_modules
 
 EXPOSE 3000
-ENV PORT 3000
 
 ENTRYPOINT ["node", "pkg/main"]
 
