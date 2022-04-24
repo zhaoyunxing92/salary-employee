@@ -2,7 +2,6 @@ FROM node:16.13.1-alpine as deps
 WORKDIR /app
 COPY package.json ./
 RUN npm config set registry http://registry.npm.taobao.org
-RUN npm install glob rimraf
 RUN npm install --only=development
 
 # builder
