@@ -32,4 +32,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: zhaoyunxing/salary-ui:${{ steps.get_version.outputs.VERSION }}
+          tags: zhaoyunxing/salary-employee:${{ steps.get_version.outputs.VERSION }}
